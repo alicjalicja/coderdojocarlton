@@ -1,6 +1,6 @@
 module.exports = {
     credentials:"aws-credentials.json",
-    bucketName:"carltoncoderdojo",
+    bucketName:"coderdojocarlton.com.au",
     patterns:[
         "css/*.css",
         "js/*.js",
