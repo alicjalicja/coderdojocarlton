@@ -1747,3 +1747,9 @@ body {
 }
 
 .social-media 2 {}
+
+
+  .resources-iframe {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
