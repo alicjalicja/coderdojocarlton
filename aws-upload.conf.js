@@ -6,6 +6,7 @@ module.exports = {
         "js/*.js",
         "images/*",
         "media/**/**",
+        "ninjaprojects/**/**/**",
         "*.html"
     ]
 }
