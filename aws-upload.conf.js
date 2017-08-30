@@ -4,6 +4,7 @@ module.exports = {
     patterns:[
         "css/*.css",
         "js/*.js",
+        "fonts/*",
         "images/*",
         "media/**/**",
         "ninjaprojects/**/**/**",

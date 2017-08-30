@@ -1753,3 +1753,16 @@ body {
     margin: 0 auto;
     margin-top: 20px;
   }
+
+
+
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+
+  background-color: #e24e35;
+    border-color: #e24e35;
+}
+
+.pagination>li>a, .pagination>li>span, .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+      color: #e24e35;
+}

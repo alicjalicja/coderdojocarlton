@@ -20,7 +20,7 @@
 
   <!-- Custom CSS -->
   <link href="css/main.css" rel="stylesheet">
-
+<link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
   <!-- Custom Fonts -->
   <link href="media/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -86,18 +86,17 @@
         <ul id="navigation" class="nav navbar-nav navbar-right">
 
           <li>
-            <a href="#about">About</a></li>
+              <a href="index.html">About</a></li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="index.html#projects">Projects</a>
           </li>
 
           <li>
             <a href="resources.html">Resources</a>
           </li>
           <li>
-            <a href="leaderboard.html">Code.org</a>
+            <a href="#">Code.org</a>
           </li>
-
           <li>
 
             <a href="contact.html">Contact</a>
@@ -110,107 +109,12 @@
   </nav>
 
 
-  <div id="myCarousel" class="carousel slide">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <div class="fill" style="background-image:url('images/coderdojoBillLiao.jpg');"></div>
-        <div class="carousel-caption">
-          <h2>Be part of CoderDojo - global movement of free coding clubs for kids (photo with CoderDojo co-founder Bill Liao)</h2>
-        </div>
-      </div>
-      <div class="item">
-        <div class="fill" style="background-image:url('images/mbot2.jpg');"></div>
-        <div class="carousel-caption">
-          <h2>Learn coding in a friendly environment</h2>
-        </div>
-      </div>
-      <div class="item">
-        <div class="fill" style="background-image:url('images/activities-02-02.png');"></div>
-        <div class="carousel-caption">
-          <h2>Number of activities to choose from</h2>
-        </div>
-      </div>
-      <!-- Controls -->
-      <a class="left carousel-control" href="/#myCarousel" data-slide="prev">
-                <span class="icon-prev"></span>
-            </a>
-      <a class="right carousel-control" href="/#myCarousel" data-slide="next">
-                <span class="icon-next"></span>
-            </a>
-    </div>
-  </div>
-
-
   <!-- Page Content -->
   <div class="container main">
-
-    <!-- About Section -->
-    <div class="row" id="about">
-      <!-- <div class="col-lg-12">
-                <h1 class="page-header">Welcome to Carlton CoderDojo coding club</h1>
-
-            </div> -->
-      <div class="col-md-8">
-        <h1 class="page-header">Welcome to Carlton CoderDojo coding club</h1>
-        <p>Carlton CoderDojo is a club for young people aged 7-17 where they can learn coding with help from volunteers. The club is located in Carlton, Melbourne and meets on a forntightly basis.
-        </p>
-        <p>If you’re interested in learning code, developing websites, apps, programs, games or exploring technology in an informal, safe, and creative environment, this club is for you!</p>
-        <p>Here is a list of activities you might be exposed to:</p>
-        <ul>
-
-          <li>scratch </li>
-          <li>appinventor</li>
-          <li>css</li>
-          <li>html</li>
-          <li>javascript</li>
-          <li>python</li>
-          <li>and more</li>
-        </ul>
-
-        <p>Our sessions run fortnightly - make sure to register for the next one.</p>
-        <a href="https://www.eventbrite.com.au/e/coderdojo-carlton-at-kathleen-syme-library-term-3-tickets-35298384418?ref=ebtn" target="_blank"><img src="https://www.eventbrite.com.au/custombutton?eid=35298384418" alt="Eventbrite - CoderDojo Carlton at Kathleen Syme Library (TERM 3)" /></a>
-
-      </div>
-
-      <div class="col-md-4">
-        <h1></h1>
-        <!--    <img class="img-responsive" src="images/knowledge_quote.jpg" alt="">-->
-        <!-- <div style="width:195px; text-align:center;" > -->
-        <a class="twitter-timeline" data-width="220" data-height="600" data-link-color="#E81C4F" href="https://twitter.com/carltondojo">Tweets by carltondojo</a>
-        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-        <!-- <iframe  src="https://www.eventbrite.com.au/calendar-widget?eid=35298384418" frameborder="0" height="628" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe> -->
-        <!-- <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:195px; text-align:center;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.com.au/">Powered by Eventbrite</a></div> -->
-        <!-- </div> -->
-      </div>
-    </div>
-    <!-- /.row -->
-
-
-
-    <!-- Call to Action Section -->
-
-    <!-- <div class="well">
-            <div class="row">
-                <div class="col-md-8">
-                    <p>Our sessions run fortnightly - make sure to register for the next one.</p>
-                </div>
-                <div class="col-md-4">
-                </div>
-            </div>
-        </div> -->
-
-
-    <div class="row" id="projects">
+    <div class="row" id="codeorgleaderboard">
       <div class="col-lg-12">
-        <h1 class="page-header">Ninjas
-                    <small>and their projects</small>
+        <h1 class="page-header">Code.org
+                    <small>progress</small>
                 </h1>
         <!--
                 <ol class="breadcrumb">
@@ -221,52 +125,108 @@
 -->
       </div>
 
+      <div class="col-lg-12">
+        <table id="example" class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Ninja</th>
+              <th>Game</th>
+              <th>Completed Levels</th>
+              <th>Lines of Code</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard">
 
-      <div class="col-md-3 col-sm-6">
-        <a href="https://carltoncoderdojo.github.io/mothersday/will/message.html" class="afeature-a">
-          <div class="afeature">
-            <div class="afmatter">
-              <i class="fa "><img class="img-responsive img-hover" src="images/logo-hd.png" alt=""></i>
-              <h4>Will's Mothers Day Website</h4>
-              <p>Check out Will's Mothers Day message</p>
-            </div>
-          </div>
-        </a>
+            <tr>
+              <td>Joshu</td>
+              <td>1. HC - Anna and Elsa</td>
+              <td>19</td>
+              <td>69</td>
+            </tr>
+            <tr>
+              <td>Grace</td>
+              <td>1. HC - Anna and Elsa</td>
+              <td>6</td>
+              <td>28</td>
+            </tr>
+            <tr>
+              <td>Nidhi</td>
+              <td>1. HC - Anna and Elsa</td>
+              <td>13</td>
+              <td>38</td>
+            </tr>
+            <tr>
+              <td>Luke</td>
+              <td>1. HC - Anna and Elsa</td>
+              <td>19</td>
+              <td>59</td>
+            </tr>
+            <tr>
+              <td>Aidan</td>
+              <td>1. HC - Anna and Elsa</td>
+              <td>6</td>
+              <td>33</td>
+            </tr>
+            <tr>
+              <td>Alekhya</td>
+              <td>1. HC - Anna and Elsa</td>
+              <td>4</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Isabella</td>
+              <td>2. HC - Flappy Game</td>
+              <td>14</td>
+              <td>51</td>
+            </tr>
+            <tr>
+              <td>Charvi 2</td>
+              <td>4. Gumball</td>
+              <td>11</td>
+              <td>120</td>
+            </tr>
+            <tr>
+              <td>Daksh</td>
+              <td>6. Star Wars</td>
+              <td>4</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <td>Charvi</td>
+              <td>8. Artist</td>
+              <td>4</td>
+              <td>76</td>
+            </tr>
+            <tr>
+              <td>Joseph</td>
+              <td>12. HC - Code your own sports game </td>
+              <td>7</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Luke</td>
+              <td>14. Minecraft Adventurer</td>
+              <td>2</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Luke</td>
+              <td>15. Minecraft Designer</td>
+              <td>11</td>
+              <td>137</td>
+            </tr>
+            <tr>
+              <td>Joseph</td>
+              <td>15. Minecraft Designer</td>
+              <td>5</td>
+              <td>120</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="ninjaprojects/Kai/about-me.html" class="afeature-a">
-          <div class="afeature">
-            <div class="afmatter">
-              <i class="fa "><img class="img-responsive img-hover" src="images/logo-hd.png" alt=""></i>
-              <h4>Kai's website project</h4>
-              <p>Check out the very first page of Kai's website project.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="afeature">
-          <div class="afmatter">
-            <i class="fa "><img class="img-responsive img-hover" src="images/logo-hd.png" alt=""></i>
-            <h4>Coming soon</h4>
-            <p>Praesent at tellus porttitor sagittis. Mauris tempor nulla. </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="afeature">
-          <div class="afmatter">
-            <i class="fa "><img class="img-responsive img-hover" src="images/logo-hd.png" alt=""></i>
-            <h4>Coming soon</h4>
-            <p>Praesent at tellus porttitor sagittis. Mauris tempor nulla. </p>
-          </div>
-        </div>
-      </div>
+
     </div>
-    <!-- /.row -->
-
-    <hr>
-
+    <br><br><br><br><br>
 
 
 
@@ -395,6 +355,16 @@
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
 
+  <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#example').DataTable({
+        "order": [[ 0, "asc" ]],
+         "pageLength": 50
+    });
+    });
+  </script>
 
 </body>
 
