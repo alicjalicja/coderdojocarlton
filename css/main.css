@@ -1766,3 +1766,8 @@ body {
 .pagination>li>a, .pagination>li>span, .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
       color: #e24e35;
 }
+
+.progress {
+  margin-bottom: 0px;
+
+}
