@@ -1,2 +1,3 @@
 aws-credentials.json
 *.psd
+node_modules

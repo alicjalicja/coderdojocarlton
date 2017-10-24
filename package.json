@@ -1,0 +1,19 @@
+{
+  "name": "coderdojocarlton",
+  "version": "1.0.0",
+  "description": "CoderDojo Carlton website",
+  "main": "index.html",
+  "scripts": {
+    "upload": "s3-upload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alicjalicja/test.git"
+  },
+  "author": "alicja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alicjalicja/test/issues"
+  },
+  "homepage": "https://github.com/alicjalicja/test#readme"
+}
